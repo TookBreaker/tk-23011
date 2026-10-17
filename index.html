@@ -48,6 +48,16 @@
     background: linear-gradient(135deg, var(--card-2), var(--card));
     border: 1px solid var(--line); border-left: 6px solid var(--accent);
     border-radius: 12px; padding: 28px 24px; margin-bottom: 24px;
+    display: flex; flex-wrap: wrap; gap: 24px; align-items: center;
+  }
+  .icat-listing .hero-text { flex: 1 1 320px; min-width: 0; }
+  .icat-listing .hero-photo { flex: 0 1 280px; margin: 0 auto; }
+  .icat-listing .hero-photo img {
+    display: block; width: 100%; height: auto; border-radius: 8px;
+    border: 1px solid var(--line);
+  }
+  .icat-listing .hero-photo figcaption {
+    font-size: 0.8rem; color: var(--muted); text-align: center; margin-top: 8px;
   }
   .icat-listing .badge {
     display: inline-block; background: var(--accent); color: var(--accent-ink);
@@ -102,6 +112,7 @@
 
   <!-- HERO -->
   <header class="hero">
+    <div class="hero-text">
     <span class="badge">501st Approved</span>
     <h1>Imperial Combat Assault Transport Driver (ICAT Driver) Costume for Sale</h1>
     <p class="lead">
@@ -112,12 +123,25 @@
       <a class="btn primary" href="https://drive.google.com/drive/folders/11MfCXr5fwpjrOCHbZq2S1D8Q26dSxqkO?usp=sharing" target="_blank" rel="noopener">View Item Photos</a>
       <a class="btn secondary" href="https://drive.google.com/drive/folders/1lyQWuhrMG_GSIxfZlrEpHIr9kdi-3rAn?usp=sharing" target="_blank" rel="noopener">View 501st Approval Photos</a>
     </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="images/icat-driver-approved.jpg" width="750" height="1050" alt="ICAT Driver costume in the field with a 501st Legion Approved stamp, Everglades Squad, Florida Garrison" decoding="async">
+      <figcaption>501st Legion approval photo</figcaption>
+    </figure>
   </header>
 
   <!-- AT A GLANCE -->
   <section>
     <h2>At a Glance</h2>
     <div class="grid">
+      <div class="tile">
+        <h3>Condition</h3>
+        <span class="meta">Worn only for 501st approval and for one troop.</span>
+      </div>
+      <div class="tile">
+        <h3>Pickup</h3>
+        <span class="meta">Local pickup or meetup in South Florida. Not shipped.</span>
+      </div>
       <div class="tile">
         <h3>Fit</h3>
         <span class="meta">Tunic &amp; pants sized for an athletic 6'2" build; pants around size 32.</span>
@@ -132,7 +156,7 @@
       </div>
       <div class="tile">
         <h3>Price</h3>
-        <span class="meta">Contact me to discuss.</span>
+        <span class="meta">Contact me for pricing details.</span>
       </div>
     </div>
   </section>
@@ -261,7 +285,8 @@
   <section class="contact">
     <h2>Interested?</h2>
     <p>
-      No price is listed yet. Reach out with questions, or to discuss the costume as a complete set.
+      Contact me for pricing details, or with any questions about the costume. Pickup or local
+      meetup in South Florida only; this costume will not be shipped.
     </p>
     <p><strong>Contact:</strong> <a href="mailto:tk-23011@outlook.com">tk-23011@outlook.com</a></p>
   </section>
