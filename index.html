@@ -94,6 +94,16 @@
   }
   .icat-listing tr:last-child th, .icat-listing tr:last-child td { border-bottom: none; }
   .icat-listing th { color: var(--accent); font-weight: 600; width: 38%; }
+  .icat-listing .versions { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 16px; }
+  .icat-listing .version {
+    border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; background: var(--bg-2);
+    display: flex; gap: 14px; align-items: center;
+  }
+  .icat-listing .swatch { flex: 0 0 40px; height: 40px; border-radius: 50%; border: 2px solid var(--line); }
+  .icat-listing .swatch.green { background: #4f8a4b; }
+  .icat-listing .swatch.red { background: #b03a35; }
+  .icat-listing .version h3 { margin: 0; }
+  .icat-listing .version .meta { color: var(--muted); font-size: 0.9rem; }
   .icat-listing .optional {
     display: inline-block; background: var(--accent-soft); color: var(--accent);
     font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
@@ -117,7 +127,8 @@
     <h1>Imperial Combat Assault Transport Driver (ICAT Driver) Costume for Sale</h1>
     <p class="lead">
       A complete, 501st-approved ICAT Driver costume: 3D-printed helmet, armor and SE-14R blaster,
-      plus all the soft goods, electronics and accessories.
+      plus all the soft goods, electronics and accessories. Approved for both the
+      Lieutenant (green) and Commander (red) versions.
     </p>
     <div class="btn-row">
       <a class="btn primary" href="https://drive.google.com/drive/folders/11MfCXr5fwpjrOCHbZq2S1D8Q26dSxqkO?usp=sharing" target="_blank" rel="noopener">View Item Photos</a>
@@ -126,7 +137,7 @@
     </div>
     <figure class="hero-photo">
       <img src="images/icat-driver-approved.jpg" width="750" height="1050" alt="ICAT Driver costume in the field with a 501st Legion Approved stamp, Everglades Squad, Florida Garrison" decoding="async">
-      <figcaption>501st Legion approval photo</figcaption>
+      <figcaption>501st Legion approval photo (Commander version shown)</figcaption>
     </figure>
   </header>
 
@@ -157,6 +168,31 @@
       <div class="tile">
         <h3>Price</h3>
         <span class="meta">Contact me for pricing details.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO APPROVED VERSIONS -->
+  <section>
+    <h2>Two Approved Versions</h2>
+    <p>
+      This costume is approved for two ranks. The only difference is the right bicep armor,
+      and both bicep pieces are included.
+    </p>
+    <div class="versions">
+      <div class="version">
+        <span class="swatch green" role="img" aria-label="Green"></span>
+        <div>
+          <h3>Lieutenant</h3>
+          <span class="meta">Green right bicep armor</span>
+        </div>
+      </div>
+      <div class="version">
+        <span class="swatch red" role="img" aria-label="Red"></span>
+        <div>
+          <h3>Commander</h3>
+          <span class="meta">Red right bicep armor (shown in the approval photo)</span>
+        </div>
       </div>
     </div>
   </section>
